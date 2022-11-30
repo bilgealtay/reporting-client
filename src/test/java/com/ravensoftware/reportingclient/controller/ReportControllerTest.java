@@ -23,8 +23,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Created by bilga
  */
 @RunWith(SpringRunner.class)
-@WebMvcTest(ReportResources.class)
-public class ReportResourcesTest {
+@WebMvcTest(ReportController.class)
+public class ReportControllerTest {
 
     @Autowired
     private MockMvc mockMvc;

@@ -7,7 +7,7 @@
 
 * Project based on Spring Boot and RestAPI. Project has a docker file and can be dockerized.
 Project build on Heroku and can be reached
-    https://reporting-client.herokuapp.com/
+    https://raven-reporting-client.herokuapp.com/
 
 
 Requirements:
@@ -31,5 +31,3 @@ Requirements:
 Bonus points:
 * Continuous Integration via any cloud CI system is done
 * Containerisation is done
-
-

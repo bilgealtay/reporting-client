@@ -1,6 +1,6 @@
 package com.ravensoftware.reportingclient.controller;
 
-import com.ravensoftware.reportingclient.control.TransactionControl;
+import com.ravensoftware.reportingclient.control.CustomerInfoControl;
 import com.ravensoftware.reportingclient.model.TransactionParam;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,13 +16,13 @@ import javax.validation.constraints.NotNull;
  */
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(value = "/transaction")
-public class TransactionResources {
+@RequestMapping(value = "client")
+public class CustomerInfoController {
 
-    private final TransactionControl transactionControl;
+    private final CustomerInfoControl customerInfoControl;
 
     @PostMapping
     public ResponseEntity transactionList(@NotNull @RequestBody TransactionParam request) {
-        return ResponseEntity.ok(transactionControl.getTransaction(request));
+        return ResponseEntity.ok(customerInfoControl.getClient(request));
     }
 }

@@ -1,7 +1,7 @@
 package com.ravensoftware.reportingclient.controller;
 
-import com.ravensoftware.reportingclient.control.ReportControl;
-import com.ravensoftware.reportingclient.model.ReportRequest;
+import com.ravensoftware.reportingclient.control.TransactionListControl;
+import com.ravensoftware.reportingclient.model.TransactionListRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,13 +16,13 @@ import javax.validation.constraints.NotNull;
  */
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(value = "/report")
-public class ReportResources {
+@RequestMapping(value = "transaction-list")
+public class TransactionListController {
 
-    private final ReportControl reportControl;
+    private final TransactionListControl transactionListControl;
 
     @PostMapping
-    public ResponseEntity report(@NotNull @RequestBody ReportRequest request) {
-        return ResponseEntity.ok(reportControl.getReport(request));
+    public ResponseEntity transactionList(@NotNull @RequestBody TransactionListRequest request) {
+        return ResponseEntity.ok(transactionListControl.getTransactionList(request));
     }
 }

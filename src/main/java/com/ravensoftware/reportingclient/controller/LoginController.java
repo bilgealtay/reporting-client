@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(value = "login")
-public class LoginResources {
+public class LoginController {
 
     private final LoginControl loginControl;
 
