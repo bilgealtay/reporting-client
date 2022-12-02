@@ -6,8 +6,6 @@
     ./mvnw package
 
 * Project based on Spring Boot and RestAPI. Project has a docker file and can be dockerized.
-Project build on Heroku and can be reached
-    https://raven-reporting-client.herokuapp.com/
 
 
 Requirements:
